@@ -146,24 +146,24 @@
 #     raise Exception("Invalid")
 
 ###
-# try:
-#     name = input("Enter you name: ")
-#
-#     if name == "vasya":
-#         raise Exception("Вася, пока!")
-#
-#     if 1 < len(name) <= 20:
-#         print(f"Hello, {name}")
-#     else:
-#         raise Exception("Please enter a valid name!")  # raise -> сгенерировать исключение (бросить исключение)
-#
-#     num = 0
-#     if num == 0:
-#         raise ZeroDivisionError("Не дели на ноль!")
-# except ZeroDivisionError as err:
-#     print("ashdfvbsdfvblsdvfbldsfv")
-# except Exception as e:
-#     print(f"Error: {e}")
-#
-# print("asdfasdf")
+try:
+    name = input("Enter you name: ")
+
+    if name == "vasya":
+        raise Exception("Вася, пока!")
+
+    if 1 < len(name) <= 20:
+        print(f"Hello, {name}")
+    else:
+        raise Exception("Please enter a valid name!")  # raise -> сгенерировать исключение (бросить исключение)
+
+    num = 0
+    if num == 0:
+        raise ZeroDivisionError("Не дели на ноль!")
+except ZeroDivisionError as err:
+    print("ashdfvbsdfvblsdvfbldsfv")
+except Exception as e:
+    print(f"Error: {e}")
+
+print("asdfasdf")
 
